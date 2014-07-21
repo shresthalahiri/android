@@ -1,0 +1,237 @@
+/* CSS Document */
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('fonts/Roboto-Thin-webfont.eot');
+    src: url('fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Thin-webfont.woff') format('woff'),
+         url('fonts/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/Roboto-Bold-webfont.eot');
+    src: url('fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+}
+
+body {
+	background-image:url(../images/bg.jpg);
+	background-size:cover;
+}
+
+
+.wrapper{
+	padding: 30px 10px 0 10px;
+}
+
+
+
+.header{
+	
+background: #fdfdfd; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZkZmRmZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMGYwZjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #fdfdfd 1%, #f0f0f0 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fdfdfd), color-stop(100%,#f0f0f0)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fdfdfd 1%,#f0f0f0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fdfdfd 1%,#f0f0f0 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fdfdfd 1%,#f0f0f0 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fdfdfd 1%,#f0f0f0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-8 */
+
+height:70px;
+width:100%;
+
+	
+border-bottom: 1px solid #cccccc;
+}
+
+.hmenu{
+	float:left;
+	margin: 18px 0 0 18px;
+}
+
+.hlogo{
+	float:right;
+	margin: 10px 18px 0 0;
+}
+
+.each_chap{
+	background-color:#e1e1e1;
+	height:100px;
+	width: 100%;
+	border-radius: 0 50px 50px 0;
+	box-shadow: 1px 2px 0px #c2c2c2;
+	position:relative;
+	z-index:100;
+	margin-top: 5px;
+}
+	
+.index{
+	height:100%;
+	width:100px;
+	background-color:#d10303;
+	float:left;
+	border-radius: 0 20px 20px 0;
+}
+
+.plus{
+	float:right;
+	margin: 20px 24px 0 0;
+}
+
+.each_chap h3{
+	float:left;
+	/* font-size: 36px; */
+}
+
+.index h2{
+	color:#FFFFFF;
+	font-size: 65px;
+	margin: 17px 0 0 18px;
+	font-family: robotoregular;
+	text-shadow: 1px 3px 0px #a70202;
+}
+
+.each_chap h3{
+	color:#7a7a7a;	
+	font-size: 38px;
+	margin: 30px 0 0 32px;
+	font-family: robotoregular;
+}
+
+.text h1{
+    font-size: 40px;
+    margin: 10px 0 25px 0;
+    font-family: robotoregular;
+}
+
+.text h3{
+    font-size: 30px;
+	
+    margin-bottom: 45px;
+    font-family: robotothin;
+}
+
+.text h3 span{
+	color:#d10303;
+	/* font-weight:bold; */
+	font-family: robotoregular;
+}
+
+.footer{
+	bottom:0;
+	left:0;
+	width:100%;
+	text-align:center;
+	margin-top: 100px;
+}
+
+.footer h3{
+    font-family: robotothin;
+	
+}
+
+.sub_chap{
+	width:100%;
+	background-color: #f3f3f3;
+	display:none;
+	position:relative;
+	z-index:10;
+	/* margin-top: -91px; */
+	border-radius: 0 35px 35px 0;
+	box-shadow: 1px 0 #d7d7d7;
+}
+
+.sub_chap ul li{
+    padding: 26px 0 26px 92px;	
+    border-bottom: 1px solid #e0dfdf;
+	background-image:url(../images/plus_inner.png);
+	background-repeat:no-repeat;
+    background-position: 28px 19px;
+    font-family: robotothin;
+    color: #7a7a7a;
+    font-size: 24px;
+}
+
+.sub_chap ul li:last-child{
+	border-bottom:none;
+}
+
+
+.sub_chap ul{
+}
+
+
+@media all and (max-width: 760px){
+
+.index h2 {
+font-size: 45px;
+margin: 8px 0 0 12px;
+}
+
+.each_chap h3 {
+font-size: 28px;
+margin: 19px 0 0 15px;
+}
+
+.each_chap {
+height: 65px;
+}
+
+.index {
+width: 75px;
+}
+
+.plus {
+width: 46px;
+margin: 10px 10px 0 0;
+}
+
+.text h1 {
+font-size: 32px;
+}
+
+.text h3 {
+font-size: 22px;
+}
+
+.footer h3 {
+font-size: 14px;
+}
+
+.sub_chap ul li{
+    padding: 22px 0 22px 78px;
+		
+    font-size: 20px;
+    background-position: 18px 12px;
+}
+
+
+}

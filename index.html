@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>APP</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<meta name="viewport" content="user-scalable=no">
+
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#btn_chem").click(function(){
+	  
+	$("#sub_chem").slideToggle();
+	  
+	var image = document.getElementById('btn_chem');
+    if (image.src.match("plus")) {
+        image.src = "images/minus.png";
+    } else {
+        image.src = "images/plus.png";
+    }  
+	  
+  });
+  
+  $("#btn_phy").click(function(){
+	  
+	$("#sub_phy").slideToggle();
+	  
+	var image = document.getElementById('btn_phy');
+    if (image.src.match("plus")) {
+        image.src = "images/minus.png";
+    } else {
+        image.src = "images/plus.png";
+    }  
+	  
+  });
+  
+  
+});
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <img src="images/menu.png" class="hmenu" />
+    
+    <img src="images/robomate.png" class="hlogo" />
+
+</div>
+
+
+<div class="wrapper">
+	
+    
+    <div class="text">
+
+		<h1>My Content</h1>
+        
+        <h3>Access course content which you have <span>Subscribed</span> or have been given <span>Free access</span></h3>
+        
+    </div>  
+    
+    <div class="chapters">
+    
+    
+    
+    
+    
+    	<div class="each_chap">
+        
+        	<div class="index">
+            
+            <h2>01</h2>
+            
+            </div>
+            
+            <h3>Chemistry</h3>
+            
+            <img src="images/plus.png" class="plus" id="btn_chem" />
+        
+        </div>
+        <div class="sub_chap" id="sub_chem">
+        	<ul>
+        		<li>Measurement</li>
+                <li>Projectile Motion</li>
+                <li>Friction In Solids & Liquids</li>
+                <li>Magnetism</li>
+            </ul>
+        
+        </div>
+        
+        
+        
+    	<div class="each_chap">
+        
+        	<div class="index">
+            
+            <h2>02</h2>
+            
+            </div>
+            
+            <h3>Physics</h3>
+            
+            <img src="images/plus.png" class="plus" id="btn_phy" />
+        
+        </div>
+        <div class="sub_chap" id="sub_phy">
+        	<ul>
+        		<li>Measurement</li>
+                <li>Projectile Motion</li>
+                <li>Friction In Solids & Liquids</li>
+                <li>Magnetism</li>
+            </ul>
+        
+        </div>
+    
+    
+    
+    
+    
+    </div>  
+    
+    <div class="footer">
+	
+    	<h3>&copy; 2014 MT EDUCARE LTD. All rights reserved.</h3>
+
+    </div>
+
+</div>
+
+</body>
+</html>
